@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/orm</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name ="hibernate.hbm2ddl.auto">update</property>
+     	
+      	<!-- <mapping class="com.learning.Hibernate.Book"/> 
+      	 <mapping class="com.learning.Hibernate.Employee"/>
+      	<mapping class="com.learning.Hibernate.Product"/>
+      	
+      
+      	<mapping class="com.hibernate.mapping_II.Department" />
+      	<mapping class="com.hibernate.mapping_II.Student" />	
+      	<mapping class="com.hibernate.mapping_III.Subject"/>
+      	<mapping class="com.hibernate.mapping_III.Student" />
+      	<mapping  class="com.FetchType.User"/>
+      	<mapping  class="com.FetchType.Product"/>
+      	<mapping class="com.hibernate.Book" />
+      	<mapping class="com.hibernate.hql.Product" />
+      	<mapping class="com.hibernate.hql_I.Students" />-->
+      	<mapping  class="com.hibernate.quizapp.User"/>
+      	<mapping  class="com.hibernate.quizapp.Question"/>
+      	<mapping  class="com.hibernate.quizapp.Answer"/>
+      	
+      	
+      	
+    </session-factory>
+</hibernate-configuration>
